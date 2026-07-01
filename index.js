@@ -14,6 +14,13 @@ const apiKey = "tqwvg4o8e9patu]gv32uy89gqweabcvsz";
                 data.forEach(element => {
                     const note = document.createElement("li");
                     note.textContent = element;
+                    note.classList.add("note");
+
+                    note.forEach(j => {
+                        const note = document.createElement("p");
+                    })
+
+
                     document.getElementById("notes-list").appendChild(note);
                 });
                 
