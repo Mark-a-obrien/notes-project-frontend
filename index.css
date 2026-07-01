@@ -1,8 +1,21 @@
+
+#notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    max-width: 40%;
+}
+
 .note {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 8px;
+
+    padding: 1rem;
+
+    border: 2px solid black;
 }
     
 

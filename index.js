@@ -13,12 +13,20 @@ const apiKey = "tqwvg4o8e9patu]gv32uy89gqweabcvsz";
                 
                 data.forEach(element => {
                     const note = document.createElement("li");
-                    note.textContent = element;
+                    // note.textContent = element;
                     note.classList.add("note");
 
-                    note.forEach(j => {
-                        const note = document.createElement("p");
-                    })
+                    const id = document.createElement("p");
+                    const title = document.createElement("p");
+                    const text = document.createElement("p");
+
+                    id.textContent = element[0];
+                    title.textContent = element[1];
+                    text.textContent = element[2];
+
+                    text.classList.add("text")
+
+                    note.append(id, title, text)
 
 
                     document.getElementById("notes-list").appendChild(note);
