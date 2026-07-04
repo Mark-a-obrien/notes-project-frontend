@@ -73,7 +73,15 @@ addNoteForm.addEventListener("submit", (e) =>
         e.preventDefault();
         const formData = new FormData(addNoteForm);
         createNote(apiKey, formData)
-    })
+        addNoteForm.style.display = "none";
+    }
+)
+
+addNoteBtn.addEventListener("click", () => 
+    {
+        addNoteForm.style.display = "flex";
+    }
+)
 
 
 
